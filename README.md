@@ -1,4 +1,3 @@
-```markdown
 # 🏆 Btemplate10 App - Sports Kit Portfolio
 
 ![Btemplate10 App](https://via.placeholder.com/800x400/3B82F6/FFFFFF?text=Btemplate10+Sports+Kit+Portfolio) <!-- Replace with your actual image path -->
