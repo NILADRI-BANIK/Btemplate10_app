@@ -1,0 +1,942 @@
+.TemplateWrapper {
+	height: 100%;
+	height: 100%;
+	background: #ffffff;
+	scrollbar-width: none;
+	scroll-behavior: smooth;
+	overflow: hidden;
+	position: relative;
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
+
+	.Setting {
+		width: 48px;
+		height: 48px;
+		cursor: pointer;
+		position: absolute;
+		top: 45%;
+		left: 5%;
+		z-index: 10;
+	}
+
+	.Template10 {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		overflow-y: scroll;
+		scrollbar-width: none;
+		scroll-behavior: smooth;
+		scroll-snap-type: y proximity;
+		margin: 0 auto;
+		// border: 1px solid #f00;
+		background: #000;
+
+		&::-webkit-scrollbar {
+			display: none;
+		}
+
+		section {
+			scroll-snap-align: start;
+			scroll-snap-stop: always;
+		}
+	}
+
+	.Container1 {
+		height: auto;
+		min-height: 100vh;
+		// max-height: 100vh;
+		width: 100vw;
+		max-width: 100vw;
+		background: linear-gradient(180deg, #00e3fe 0%, #000 88.92%);
+		position: relative;
+		.changeLandingIcon {
+			position: absolute;
+			height: 4rem;
+			width: 4rem;
+			top: 2rem;
+			right: 2rem;
+			@media (orientation: portrait) {
+				height: 3rem;
+				width: 3rem;
+			}
+		}
+
+		@media (orientation: portrait) {
+			height: 100vh;
+			max-height: 100vh;
+			background: linear-gradient(180deg, #00e3fe 0%, #000 88.92%);
+		}
+		.asset {
+			width: 100vw;
+			height: 78.1545rem;
+			// height: 100vh;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 2;
+			@media (orientation: portrait) {
+				height: 38.76306rem;
+			}
+			img {
+				height: 100%;
+				width: 100%;
+			}
+		}
+
+		.intro {
+			width: 112.26319rem;
+			width: 100vw;
+			height: 78.1545rem;
+			// height: 100vh;
+			flex-shrink: 0;
+
+			.introImage {
+				width: 100%;
+				height: 100%;
+				clip-path: polygon(0 0, 100% 0, 100% 98%, 0 37%);
+				@media (orientation: portrait) {
+					clip-path: polygon(0 0, 100% 0, 100% 49%, 0 33.3%);
+				}
+				img {
+					height: 100%;
+					width: 100%;
+					@media (orientation: portrait) {
+						height: 60%;
+					}
+				}
+			}
+		}
+		.postSubscribers {
+			width: 10.91531rem;
+			height: 16.49506rem;
+			border-radius: 0.77438rem;
+			border: 2px solid #5200ff;
+			background: rgba(0, 0, 0, 0.17);
+			box-shadow: 0px 4.956px 4.956px 0px rgba(0, 0, 0, 0.25);
+			backdrop-filter: blur(18.5853271484375px);
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-around;
+			position: absolute;
+			z-index: 10;
+			right: 10rem;
+			bottom: 0%;
+			@media (orientation: portrait) {
+				width: 6.75669rem;
+				height: 10.21056rem;
+				border-radius: 0.47938rem;
+				border: 1.238px solid #5200ff;
+				background: rgba(0, 0, 0, 0.17);
+				box-shadow: 0px 3.068px 3.068px 0px rgba(0, 0, 0, 0.25);
+				backdrop-filter: blur(11.504464149475098px);
+				bottom: 8rem;
+				right: 2rem;
+			}
+			.subscribers,
+			.posts {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				h3 {
+					color: #fff;
+					font-family: Roboto;
+					font-size: 2.68331rem;
+					font-style: normal;
+					font-weight: 500;
+					line-height: normal;
+					@media (orientation: portrait) {
+						font-size: 1.661rem;
+					}
+				}
+				h5 {
+					color: #fff;
+					font-family: Roboto;
+					font-size: 1.25219rem;
+					font-style: normal;
+					font-weight: 400;
+					line-height: normal;
+					@media (orientation: portrait) {
+						font-size: 0.77513rem;
+					}
+				}
+			}
+		}
+
+		.content {
+			display: flex;
+			align-items: center;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			margin: 0 0 0.3rem 3rem;
+			gap: 2rem;
+			z-index: 7;
+			@media (orientation: portrait) {
+				left: -2rem;
+			}
+			.RatingContainer {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 7rem;
+				height: 7rem;
+				cursor: pointer;
+				position: absolute;
+				left: 190%;
+				bottom: 10%;
+				@media (orientation: portrait) {
+					width: 3.99925rem;
+					height: 3.99925rem;
+					left: 160%;
+					bottom: 20%;
+				}
+
+				img {
+					width: 100%;
+					height: 100%;
+				}
+
+				p {
+					color: #fff;
+					font-family: Poppins;
+					font-size: 1.31556rem;
+					font-style: normal;
+					font-weight: 600;
+					line-height: normal;
+					position: absolute;
+					@media (orientation: portrait) {
+						color: #fff;
+						leading-trim: both;
+						text-edge: cap;
+						font-family: Poppins;
+						font-size: 0.71819rem;
+					}
+				}
+			}
+
+			.socials {
+				width: 4.625rem;
+				height: 31.625rem;
+				border-radius: 1.375rem;
+				border: 1px solid #633cff;
+				background: rgba(0, 0, 0, 0.05);
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: space-around;
+				@media (orientation: portrait) {
+					height: 11.8125rem;
+					width: 2.875rem;
+					border-radius: 0.5rem;
+					border: 1px solid #780eff;
+					background: rgba(0, 0, 0, 0.08);
+					backdrop-filter: blur(10px);
+				}
+
+				.whatsapp,
+				.phone,
+				.location,
+				.store,
+				.mail {
+					width: 2.53494rem;
+					height: 2.53494rem;
+					@media (orientation: portrait) {
+						width: 1.2105rem;
+						height: 1.2105rem;
+					}
+
+					img {
+						height: 100%;
+						width: 100%;
+						cursor: pointer;
+					}
+				}
+			}
+			.nameActions {
+				@media (orientation: portrait) {
+					position: absolute;
+					top: -100%;
+					left: 25%;
+				}
+
+				.EditTextIcon {
+					height: 4rem;
+					width: 4rem;
+					position: absolute;
+					top: 0;
+					right: 0;
+					@media (orientation: portrait) {
+						height: 3rem;
+						width: 3rem;
+						top: -3.4rem;
+					}
+				}
+				.businessName {
+					width: 28.91169rem;
+					color: #efcd3c;
+					font-family: Bebas Neue;
+					font-size: 9.59431rem;
+					font-style: normal;
+					font-weight: 400;
+					line-height: 94%;
+					@media (orientation: portrait) {
+						width: 13.36594rem;
+						font-size: 4.4355rem;
+					}
+				}
+				.buttons {
+					display: flex;
+					align-items: center;
+					justify-content: space-around;
+					transform: rotate(0.17deg);
+					button {
+						font-family: Roboto;
+						font-size: 2.28269rem;
+						font-style: normal;
+						font-weight: 500;
+						line-height: normal;
+						background-color: transparent;
+						border: none;
+						@media (orientation: portrait) {
+							font-size: 1.05531rem;
+						}
+						cursor: pointer;
+						&:nth-child(1) {
+							color: #fff;
+							position: relative;
+							&::before {
+								content: "";
+								width: 3.97119rem;
+								height: 3.96431rem;
+								transform: rotate(0.17deg);
+								border-radius: 1.98563rem;
+								background: #ffaf38;
+								left: 0;
+							}
+						}
+
+						&:nth-child(2) {
+							color: rgba(255, 255, 255, 0.45);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.Container2 {
+		height: auto;
+		min-height: 100vh;
+		width: 100vw;
+		max-width: 100vw;
+		background: linear-gradient(180deg, #38d3d8 0%, #000 28.65%);
+		// background: linear-gradient(to top, #00e2fe, #1e626b);
+		// transform: translateY(-0.2%);
+		background: #010101;
+		position: relative;
+		@media (orientation: portrait) {
+			background: #010101;
+		}
+
+		.aboutImage {
+			z-index: 3;
+			width: 107.99994rem;
+			width: 100vw;
+			height: 127.05494rem;
+			clip-path: polygon(100% 0, 100% 71%, 0 100%, 0 30%);
+			transform: translateY(-10%);
+			position: relative;
+			@media (orientation: portrait) {
+				height: 47.60413rem;
+			}
+			img {
+				height: 100%;
+				width: 100%;
+			}
+		}
+		.aboutCompany {
+			width: 39.78413rem;
+			height: 38.34181rem;
+			// transform: rotate(-89.22deg);
+			flex-shrink: 0;
+			position: absolute;
+			z-index: 5;
+			right: 0;
+			top: 10%;
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			@media (orientation: portrait) {
+				width: 16.64838rem;
+				height: 16.04481rem;
+				top: 5%;
+				right: -2%;
+			}
+
+			img {
+				fill: rgba(0, 0, 0, 0.3);
+				// backdrop-filter: blur(11.916088104248047px);
+				height: 100%;
+				width: 100%;
+				position: absolute;
+				z-index: -1;
+				top: 0;
+			}
+			p {
+				margin-right: 2rem;
+				width: 22.02681rem;
+				color: #fff;
+				font-family: Roboto;
+				font-size: 3.82556rem;
+				font-style: normal;
+				font-weight: 300;
+				line-height: normal;
+				@media (orientation: portrait) {
+					font-size: 1.40538rem;
+					width: 8.09175rem;
+				}
+			}
+		}
+
+		.aboutDesc {
+			width: 49.96888rem;
+			height: 48.75669rem;
+			// transform: rotate(90.78deg);
+			fill: rgba(0, 0, 0, 0.3);
+			box-shadow: 23.447px 23.447px 35.171px 0px rgba(82, 82, 82, 0.25) inset;
+			// backdrop-filter: blur(11.723610877990723px);
+			position: absolute;
+			left: 0;
+			top: 40%;
+			z-index: 5;
+			display: flex;
+			align-items: center;
+			@media (orientation: portrait) {
+				width: 24.71019rem;
+				height: 24.11075rem;
+				top: 25%;
+				left: -2%;
+			}
+			.EditTextIcon {
+				height: 4rem;
+				width: 4rem;
+				position: absolute;
+				top: 5rem;
+				left: 4rem;
+				@media (orientation: portrait) {
+					height: 3rem;
+					width: 3rem;
+					top: 4rem;
+				}
+			}
+
+			img {
+				height: 100%;
+				width: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: -1;
+			}
+			.aboutusText {
+				margin-top: 3rem;
+				margin-left: 3rem;
+				color: #fff;
+				font-family: Roboto;
+				font-size: 1.4375rem;
+				font-style: normal;
+				font-weight: 300;
+				line-height: normal;
+				width: 28.23156rem;
+				height: 19.57856rem;
+				@media (orientation: portrait) {
+					margin-top: 1rem;
+					margin-left: 1.5rem;
+					width: 13.58988rem;
+					height: max-content;
+					font-size: 0.8125rem;
+				}
+			}
+		}
+		.hiringButton {
+			display: inline-flex;
+			height: 6.33631rem;
+			padding: 1.41444rem 4.24338rem;
+			justify-content: center;
+			align-items: center;
+			border-radius: 0.56581rem;
+			border: 1px solid #000;
+			background: linear-gradient(180deg, #3d96ff 0%, #000 100%);
+			color: #fff;
+			font-family: Inter;
+			font-size: 1.49088rem;
+			font-style: normal;
+			font-weight: 500;
+			line-height: normal;
+			letter-spacing: 0.39506rem;
+			text-transform: uppercase;
+			position: absolute;
+			z-index: 6;
+			bottom: 20%;
+			right: 10%;
+			cursor: pointer;
+			@media (orientation: portrait) {
+				height: 2.85806rem;
+				padding: 0.638rem 1.914rem;
+				border-radius: 0.25519rem;
+				border: 0.451px solid #000;
+				font-size: 0.6725rem;
+				letter-spacing: 0.17819rem;
+				bottom: 32%;
+			}
+		}
+	}
+	.Container3 {
+		height: auto;
+		// height: 62.74963rem;
+		height: calc(62.74963rem - 40%);
+		width: 100vw;
+		max-width: 100vw;
+		position: relative;
+		z-index: 6;
+		// background: linear-gradient(180deg, #00e2fe 0%, #000 28.65%);
+		@media (orientation: portrait) {
+			height: calc(29.92288rem - 40%);
+		}
+
+		.chooseusImage {
+			// transform: translateY(-45%);
+			width: 109.58406rem;
+			width: 100vw;
+			height: 62.74963rem;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			z-index: -1;
+			clip-path: polygon(20% 3%, 100% 38%, 100% 100%, 0 100%, 0 3%);
+			@media (orientation: portrait) {
+				height: 29.92288rem;
+				clip-path: polygon(5% 3%, 100% 38%, 100% 100%, 0 100%, 0 3%);
+			}
+
+			img {
+				height: 100%;
+				width: 100%;
+			}
+		}
+
+		.chooseusContent {
+			width: 108.76069rem;
+			width: 100vw;
+			height: 41.61819rem;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			@media (orientation: portrait) {
+				height: 17.6825rem;
+			}
+			.EditTextIcon {
+				height: 4rem;
+				width: 4rem;
+				position: absolute;
+				bottom: 5rem;
+				right: 4rem;
+				@media (orientation: portrait) {
+					height: 3rem;
+					width: 3rem;
+					bottom: 8rem;
+					right: 4rem;
+				}
+			}
+
+			img {
+				fill: rgba(0, 0, 0, 0.1);
+				// backdrop-filter: blur(18.644250869750977px);
+				height: 100%;
+				width: 100%;
+				position: absolute;
+				bottom: 0;
+			}
+
+			h3 {
+				width: 21.80963rem;
+				color: #fff;
+				font-family: Roboto;
+				font-size: 4.31575rem;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+				padding-left: 4rem;
+				@media (orientation: portrait) {
+					font-size: 1.78056rem;
+					width: 8.998rem;
+				}
+			}
+			.chooseusText {
+				padding-left: 4rem;
+				width: 57.30419rem;
+				color: #fff;
+				font-family: Roboto;
+				font-size: 1.4375rem;
+				font-style: normal;
+				font-weight: 300;
+				line-height: normal;
+				margin-bottom: 3rem;
+				@media (orientation: portrait) {
+					width: 22.56356rem;
+					font-size: 0.64438rem;
+				}
+			}
+		}
+	}
+	.Container4 {
+		height: 100vh;
+		max-height: 100vh;
+		width: 100vw;
+		max-width: 100vw;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		@media (orientation: portrait) {
+			height: auto;
+		}
+
+		.topSection {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 3rem 6rem;
+			@media (orientation: portrait) {
+				padding: 3rem;
+			}
+
+			h3 {
+				width: 19.21306rem;
+				color: #fff;
+				font-family: Roboto;
+				font-size: 5.22569rem;
+				font-style: normal;
+				font-weight: 600;
+				line-height: 117%; /* 6.11406rem */
+				@media (orientation: portrait) {
+					width: 9.01775rem;
+					font-size: 2.45275rem;
+				}
+			}
+			h4 {
+				color: #fff;
+				font-family: Roboto;
+				font-size: 2.875rem;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 75.688%; /* 2.176rem */
+				@media (orientation: portrait) {
+					font-size: 0.82763rem;
+				}
+			}
+		}
+		.productContainer {
+			width: max-content;
+			display: grid;
+			grid-template-columns: 33.05875rem 33.05875rem 33.05875rem;
+			grid-template-rows: 22.62619rem 22.62619rem;
+			row-gap: 0.8rem;
+			column-gap: 1rem;
+			@media (orientation: portrait) {
+				grid-template-columns: 12.0185rem 12.0185rem;
+				grid-template-rows: 11.09781rem 11.09781rem;
+				margin-bottom: 4rem;
+			}
+
+			.product {
+				padding: 2px;
+				text-align: center;
+				position: relative;
+				z-index: 1;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;
+
+				.imageUrl {
+					height: 100%;
+					width: 100%;
+					position: absolute;
+					z-index: -1;
+					img {
+						height: 100%;
+						width: 100%;
+					}
+				}
+				.nameActions {
+					width: 100%;
+					height: auto;
+					transition: height ease 0.3s; /* Apply the transition to the height property */
+					overflow: hidden;
+					.name {
+						padding: 1rem 2rem;
+						width: max-content;
+						color: #fff;
+						font-family: Roboto;
+						font-size: 2.42644rem;
+						font-style: normal;
+						font-weight: 400;
+						line-height: 92.688%; /* 2.249rem */
+						@media (orientation: portrait) {
+							font-size: 1.02588rem;
+							padding: 0.5rem 1rem;
+						}
+					}
+
+					.actions {
+						display: flex;
+						align-items: center;
+						gap: 0.3rem;
+						padding: 1rem 2rem;
+						@media (orientation: portrait) {
+							padding: 0.5rem 1rem;
+						}
+						.like {
+							width: 2.88838rem;
+							height: 2.75213rem;
+							flex-shrink: 0;
+							@media (orientation: portrait) {
+								width: 1.22125rem;
+								height: 1.16363rem;
+							}
+						}
+						.comment {
+							width: 3.0405rem;
+							height: 2.59575rem;
+							@media (orientation: portrait) {
+								width: 1.2855rem;
+								height: 1.0975rem;
+							}
+						}
+						.share {
+							width: 3.79594rem;
+							height: 2.23863rem;
+							@media (orientation: portrait) {
+								width: 1.60494rem;
+								height: 0.9465rem;
+							}
+						}
+						.like,
+						.comment,
+						.share {
+							img {
+								cursor: pointer;
+								height: 100%;
+								width: 100%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.Container5 {
+		min-height: 100vh;
+		width: 100vw;
+		max-width: 100vw;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 2rem;
+		@media (orientation: portrait) {
+			min-height: auto;
+		}
+
+		.topSection {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 3rem 6rem;
+			@media (orientation: portrait) {
+				padding: 3rem;
+			}
+
+			h3 {
+				width: 19.21306rem;
+				color: #fff;
+				font-family: Roboto;
+				font-size: 5.22569rem;
+				font-style: normal;
+				font-weight: 600;
+				line-height: 117%; /* 6.11406rem */
+				@media (orientation: portrait) {
+					width: 9.01775rem;
+					font-size: 2.45275rem;
+				}
+			}
+			h4 {
+				color: #fff;
+				font-family: Roboto;
+				font-size: 2.875rem;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 75.688%; /* 2.176rem */
+				@media (orientation: portrait) {
+					font-size: 0.82763rem;
+				}
+			}
+		}
+
+		.carousel {
+			width: 81.09794rem;
+			@media (orientation: portrait) {
+				width: 24.45119rem;
+			}
+		}
+
+		.thankYou {
+			color: #fff;
+			font-family: Noto Serif;
+			font-size: 2.93513rem;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			margin-bottom: 3rem;
+			@media (orientation: portrait) {
+				font-size: 1.625rem;
+			}
+		}
+	}
+
+	.GalleryCard {
+		width: 81.09794rem;
+		height: 59.98369rem;
+		border-radius: 3.60988rem;
+		position: relative;
+		z-index: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		@media (orientation: portrait) {
+			width: 24.45119rem;
+			height: 23.57606rem;
+			border-radius: 1.08838rem;
+		}
+
+		.backImage {
+			height: 100%;
+			width: 100%;
+			border-radius: 3.60988rem;
+			position: absolute;
+			z-index: -1;
+			img {
+				height: 100%;
+				width: 100%;
+				border-radius: 3.60988rem;
+				@media (orientation: portrait) {
+					border-radius: 1.08838rem;
+				}
+			}
+		}
+		.upperSection {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 0.1rem;
+			padding: 3rem 4rem;
+			h3 {
+				color: #000;
+				text-align: center;
+				font-family: Roboto;
+				font-size: 2.39438rem;
+				font-style: normal;
+				font-weight: 300;
+				line-height: normal;
+				letter-spacing: 0.38313rem;
+				text-transform: uppercase;
+				@media (orientation: portrait) {
+					font-size: 0.72194rem;
+				}
+			}
+			h4 {
+				color: #000;
+				text-align: center;
+				font-family: Roboto;
+				font-size: 1.43125rem;
+				font-style: normal;
+				font-weight: 300;
+				line-height: normal;
+				letter-spacing: 0.229rem;
+				text-transform: uppercase;
+				@media (orientation: portrait) {
+					font-size: 0.4315rem;
+				}
+			}
+		}
+		.bottomSection {
+			display: flex;
+			width: 77.70725rem;
+			height: 6.43738rem;
+			background: rgba(255, 255, 255, 0.2);
+			backdrop-filter: blur(4.430086612701416px);
+			margin: 2rem;
+			@media (orientation: portrait) {
+				width: 23.42888rem;
+				width: 90%;
+				margin: auto;
+				margin-bottom: 1.2rem;
+				height: 1.94088rem;
+				background: rgba(255, 255, 255, 0.2);
+				backdrop-filter: blur(1.3356804847717285px);
+			}
+			.desc {
+				width: 60%;
+			}
+			.actions {
+				flex: 1;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				gap: 4rem;
+				@media (orientation: portrait) {
+					gap: 1.2rem;
+				}
+				.like {
+					width: 2.7945rem;
+					height: 2.66281rem;
+					@media (orientation: portrait) {
+						width: 0.84263rem;
+						height: 0.80288rem;
+					}
+				}
+				.comment {
+					width: 4.06319rem;
+					height: 3.46856rem;
+					@media (orientation: portrait) {
+						width: 1.22506rem;
+						height: 1.04575rem;
+					}
+				}
+				.share {
+					width: 5.08063rem;
+					height: 2.99625rem;
+					@media (orientation: portrait) {
+						width: 1.53181rem;
+						height: 0.90338rem;
+					}
+				}
+				.like,
+				.comment,
+				.share {
+					img {
+						height: 100%;
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
